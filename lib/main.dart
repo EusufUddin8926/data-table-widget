@@ -39,6 +39,32 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text("Data Table", style: TextStyle(color: Colors.white),),
       ),
 
+      body: Center(
+        child: DataTable(
+            columns: [
+              DataColumn(label: Text("Name")),
+              DataColumn(label: Text("Age")),
+              DataColumn(label: Text("Education")),
+            ],
+            rows: [
+              DataRow(cells: [
+                DataCell(Text("Eusuf Uddin")),
+                DataCell(Text("28")),
+                DataCell(Text("Bsc")),
+              ]),
+              DataRow(cells: [
+                DataCell(Text("Imrul hasan")),
+                DataCell(Text("30")),
+                DataCell(Text("Bsc")),
+              ]),
+              DataRow(cells: [
+                DataCell(Text("Siyam hasan")),
+                DataCell(Text("30")),
+                DataCell(Text("Msc")),
+              ]),
+            ]
+        ),
+      ),
     );
   }
 }
