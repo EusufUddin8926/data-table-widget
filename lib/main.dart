@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: DataTable(
             columns: [
-              DataColumn(label: Text("Name")),
+              DataColumn(label: Text("Name"), tooltip: "Name"),
               DataColumn(label: Text("Age")),
               DataColumn(label: Text("Education")),
             ],
