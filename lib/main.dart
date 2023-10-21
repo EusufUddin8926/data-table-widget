@@ -58,8 +58,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 DataCell(Text("Bsc")),
               ]),
               DataRow(cells: [
-                DataCell(Text("Siyam hasan")),
-                DataCell(Text("30")),
+                DataCell(Icon(Icons.add_box_rounded)),
+                DataCell(Text("30"), showEditIcon: true),
                 DataCell(Text("Msc")),
               ]),
             ]
